@@ -15,25 +15,39 @@ const NotesApp = () => {
 	const addhandler = (e) => {
 		e.preventDefault();
 		setloading(true);
+
 		setdata([...data, { title: formdata.title, status: formdata.status }]);
 		setfilterd([...data]);
 	};
 	const fillter = (type) => {
-		console.log(filtered);
 		if (data.length > 1) {
-			if (type === 'All') {
-				let test = filtered.filter((item) => item.status === 'All');
-				setfilterd([...data]);
-				setdata([...test]);
-			} else if (type === 'Active') {
-				let test = filtered.filter((item) => item.status === 'Active');
-				setdata([...test]);
-			} else if (type === 'Completed') {
+			if (type === 'All' || type === 'all') {
 				let test = filtered.filter(
-					(item) => item.status === 'Completed',
+					(item) => item.status === 'All' || item.status === 'all',
 				);
-
-				setdata([...test]);
+				if (test.length > 0) {
+					setfilterd([...data]);
+					setdata([...test]);
+				}
+			} else if (type === 'Active' || type === 'active') {
+				let test = filtered.filter(
+					(item) =>
+						item.status === 'Active' || item.status === 'active',
+				);
+				if (test.length > 0) {
+					setfilterd([...data]);
+					setdata([...test]);
+				}
+			} else if (type === 'Completed' || type === 'completed') {
+				let test = filtered.filter(
+					(item) =>
+						item.status === 'Completed' ||
+						item.status === 'completed',
+				);
+				if (test.length > 0) {
+					setfilterd([...data]);
+					setdata([...test]);
+				}
 			}
 		}
 	};
@@ -89,7 +103,7 @@ const NotesApp = () => {
 					</li>
 				</ul>
 			</div>
-			<div className='card w-40 pt-30 pb-8'>
+			<div className='card w-40  pb-8'>
 				<table>
 					<thead>
 						<tr>
