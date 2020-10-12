@@ -1,0 +1,5 @@
+[1010/222651.848:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\leult\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\13256c3a-3420-48b4-b50a-163bd2e6558d: The system cannot find the path specified. (0x3)
+[1010/222651.850:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\leult\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\4992a1da-16a5-4c66-8ed8-7a8d8799f79a: The system cannot find the path specified. (0x3)
+[1010/222651.852:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\leult\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\7b078578-f1a3-4db8-ac68-89419ba7cf31: The system cannot find the path specified. (0x3)
+[1010/222651.853:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\leult\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\b10f6ea5-37d3-4508-a772-53a8e311ba46: The system cannot find the path specified. (0x3)
+[1010/222651.853:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
